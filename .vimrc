@@ -30,7 +30,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'mhinz/vim-startify'
-" Plugin 'w0rp/ale'
+Plugin 'alvan/vim-closetag'
+Plugin 'w0rp/ale'
 
 " Customization
 Plugin 'ryanoasis/vim-devicons'
@@ -46,6 +47,10 @@ Plugin 'moll/vim-node'
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'nikvdp/ejs-syntax'
+
+" C#
+Plugin 'omnisharp/omnisharp-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -128,4 +133,12 @@ call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#151515')
 call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#151515')
 call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
 
+" Color scheme configuration
 colorscheme darkblue 
+
+" Autoclose tag configuration
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js'
+
+" Omnisharp settings
+let g:omnicomplete_fetch_full_documentation = 1
+set previewheight=5
