@@ -7,8 +7,19 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="arrow"
+#ZSH_THEME="arrow"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE="nerdfont-complete"
+POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_linux_icon dir vcs)
+
+POWERLEVEL9K_CUSTOM_LINUX_ICON="echo "
+POWERLEVEL9K_CUSTOM_LINUX_ICON_BACKGROUND=069
+POWERLEVEL9K_CUSTOM_LINUX_ICON_FOREGROUND=015
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -58,9 +69,9 @@ ZSH_THEME="arrow"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git autojump colored-man extract
-)
+#plugins=(
+#  git autojump colored-man extract
+#)
 
 source $ZSH/oh-my-zsh.sh
 
